@@ -34,4 +34,6 @@ before_script:
 script:
     - bin/phpspec run -fpretty --verbose
     - bin/behat --no-snippets --verbose -fpretty
-build_image: shippable/minv2
+
+build_image: shippable/minv2:beta
+#build_image: shippable/minv2
